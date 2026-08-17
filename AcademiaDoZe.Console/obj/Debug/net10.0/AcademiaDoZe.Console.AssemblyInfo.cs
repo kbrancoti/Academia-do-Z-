@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcademiaDoZe.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c19eabc45e0077209d1645c8f4a423fd6a596720")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcademiaDoZe.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcademiaDoZe.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

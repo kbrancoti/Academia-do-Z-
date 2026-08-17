@@ -16,3 +16,4 @@ C:\workplace\academiaZe\AcademiaDoZe.Console\obj\Debug\net10.0\refint\AcademiaDo
 C:\workplace\academiaZe\AcademiaDoZe.Console\obj\Debug\net10.0\AcademiaDoZe.Console.pdb
 C:\workplace\academiaZe\AcademiaDoZe.Console\obj\Debug\net10.0\AcademiaDoZe.Console.genruntimeconfig.cache
 C:\workplace\academiaZe\AcademiaDoZe.Console\obj\Debug\net10.0\ref\AcademiaDoZe.Console.dll
+C:\workplace\academiaZe\AcademiaDoZe.Console\obj\Debug\net10.0\AcademiaDoZe.Console.sourcelink.json

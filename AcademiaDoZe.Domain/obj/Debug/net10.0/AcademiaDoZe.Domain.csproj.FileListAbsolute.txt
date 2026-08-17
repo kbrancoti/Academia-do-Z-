@@ -9,3 +9,4 @@ C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domai
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\refint\AcademiaDoZe.Domain.dll
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.pdb
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\ref\AcademiaDoZe.Domain.dll
+C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.sourcelink.json
