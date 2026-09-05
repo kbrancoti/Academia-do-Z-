@@ -1,3 +1,4 @@
+﻿// Kaio Fernandes Branco
 // Testes de Value Objects - Academia do Zé
 using AcademiaDoZe.Domain.Entities;
 using AcademiaDoZe.Domain.ValueObjects;

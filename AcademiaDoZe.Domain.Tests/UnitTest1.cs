@@ -1,4 +1,5 @@
-﻿namespace AcademiaDoZe.Domain.Tests;
+﻿// Kaio Fernandes Branco
+namespace AcademiaDoZe.Domain.Tests;
 
 public class UnitTest1
 {

@@ -1,0 +1,19 @@
+﻿// Kaio Fernandes Branco
+namespace AcademiaDoZe.Infrastructure.Exceptions;
+
+public class InfrastructureException : Exception
+{
+    public string? ErrorCode { get; }
+    public DateTime Timestamp { get; } = DateTime.UtcNow;
+
+    public InfrastructureException(string message) : base(message) { }
+    public InfrastructureException(string message, Exception innerException) : base(message, innerException) { }
+    public InfrastructureException(string errorCode, string message) : base(message) => ErrorCode = errorCode;
+    public InfrastructureException(string errorCode, string message, Exception innerException) : base(message, innerException) => ErrorCode = errorCode;
+
+    public override string ToString()
+    {
+        var code = string.IsNullOrWhiteSpace(ErrorCode) ? string.Empty : $" [{ErrorCode}]";
+        return $"[{Timestamp:yyyy-MM-dd HH:mm:ss UTC}]{code} {base.ToString()}";
+    }
+}
