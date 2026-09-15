@@ -1,0 +1,4 @@
+// Kaio Fernandes Branco
+using AcademiaDoZe.Application.DTOs;
+namespace AcademiaDoZe.Application.Interfaces;
+public interface ILogradouroService { Task<LogradouroDto?> ObterPorIdAsync(int id, CancellationToken ct = default); Task<IEnumerable<LogradouroDto>> ObterTodosAsync(CancellationToken ct = default); Task<LogradouroDto> AdicionarAsync(LogradouroDto dto, CancellationToken ct = default); Task<LogradouroDto> AtualizarAsync(LogradouroDto dto, CancellationToken ct = default); Task<bool> RemoverAsync(int id, CancellationToken ct = default); Task<LogradouroDto?> ObterPorCepAsync(string cep, CancellationToken ct = default); Task<bool> CepJaExisteAsync(string cep, int? id = null, CancellationToken ct = default); Task<IEnumerable<LogradouroDto>> ObterPorCidadeAsync(string cidade, CancellationToken ct = default); Task<IEnumerable<LogradouroDto>> ObterPorBairroAsync(string cidade, string bairro, CancellationToken ct = default); }

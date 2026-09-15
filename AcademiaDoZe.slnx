@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="AcademiaDoZe.Console/AcademiaDoZe.Console.csproj" />
+  <Project Path="AcademiaDoZe.Application/AcademiaDoZe.Application.csproj" />
   <Project Path="AcademiaDoZe.Domain.Tests/AcademiaDoZe.Domain.Tests.csproj" />
   <Project Path="AcademiaDoZe.Domain/AcademiaDoZe.Domain.csproj" />
   <Project Path="AcademiaDoZe.Infrastructure/AcademiaDoZe.Infrastructure.csproj" />

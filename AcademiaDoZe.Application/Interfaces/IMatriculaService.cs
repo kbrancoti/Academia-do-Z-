@@ -1,0 +1,5 @@
+// Kaio Fernandes Branco
+using AcademiaDoZe.Application.DTOs;
+using AcademiaDoZe.Application.Enums;
+namespace AcademiaDoZe.Application.Interfaces;
+public interface IMatriculaService { Task<MatriculaDto?> ObterPorIdAsync(int id, CancellationToken ct = default); Task<IEnumerable<MatriculaDto>> ObterTodasAsync(CancellationToken ct = default); Task<MatriculaDto> AdicionarAsync(MatriculaDto dto, CancellationToken ct = default); Task<MatriculaDto> AtualizarAsync(MatriculaDto dto, CancellationToken ct = default); Task<bool> RemoverAsync(int id, CancellationToken ct = default); Task<IEnumerable<MatriculaDto>> ObterPorAlunoIdAsync(int alunoId, CancellationToken ct = default); Task<MatriculaDto?> ObterMatriculaAtivaPorAlunoAsync(int alunoId, CancellationToken ct = default); Task<bool> PossuiMatriculaAtivaAsync(int alunoId, CancellationToken ct = default); Task<IEnumerable<MatriculaDto>> ObterAtivasAsync(int alunoId = 0, CancellationToken ct = default); Task<IEnumerable<MatriculaDto>> ObterVencendoEmDiasAsync(int dias, CancellationToken ct = default); Task<IEnumerable<MatriculaDto>> ObterPorPlanoAsync(AppMatriculaPlano plano, CancellationToken ct = default); }
