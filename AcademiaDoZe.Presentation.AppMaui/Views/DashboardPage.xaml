@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AcademiaDoZe.Presentation.AppMaui.Views.DashboardPage" Title="Dashboard" BackgroundColor="#F7F8FA">
+    <ScrollView><VerticalStackLayout Padding="24" Spacing="18">
+        <Image Source="academiadoze.png" HeightRequest="220" Aspect="AspectFit" />
+        <Label Text="Painel da Academia" FontSize="28" FontAttributes="Bold" TextColor="#071B33" HorizontalOptions="Center" />
+        <Label Text="Olá, Kaio Fernandes Branco" FontSize="16" HorizontalOptions="Center" TextColor="#45546A" />
+        <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="14" RowSpacing="14">
+            <Border Grid.Row="0" Grid.Column="0" BackgroundColor="#071B33" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Logradouros" TextColor="White"/><Label Text="{Binding TotalLogradouros}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
+            <Border Grid.Row="0" Grid.Column="1" BackgroundColor="#173A5E" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Alunos" TextColor="White"/><Label Text="{Binding TotalAlunos}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
+            <Border Grid.Row="1" Grid.Column="0" BackgroundColor="#173A5E" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Colaboradores" TextColor="White"/><Label Text="{Binding TotalColaboradores}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
+            <Border Grid.Row="1" Grid.Column="1" BackgroundColor="#071B33" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Matrículas" TextColor="White"/><Label Text="{Binding TotalMatriculas}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
+        </Grid>
+        <Button Text="Gerenciar Logradouros" Command="{Binding AbrirLogradourosCommand}" Margin="0,12,0,0" />
+    </VerticalStackLayout></ScrollView>
+</ContentPage>

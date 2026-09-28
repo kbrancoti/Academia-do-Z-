@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AcademiaDoZe.Presentation.AppMaui.Views.LogradouroPage" Title="{Binding Title}" BackgroundColor="#F7F8FA">
+    <ContentPage.Resources><Style TargetType="Label"><Setter Property="TextColor" Value="#071B33"/></Style></ContentPage.Resources>
+    <ScrollView><VerticalStackLayout Padding="24" Spacing="8">
+        <Label Text="Dados do Logradouro" FontSize="26" FontAttributes="Bold" TextColor="#071B33" Margin="0,0,0,4"/>
+        <Label Text="Preencha os campos marcados com * para salvar." TextColor="#45546A" Margin="0,0,0,12"/>
+        <Label Text="CEP *"/><Entry Text="{Binding Logradouro.Cep}" Keyboard="Numeric" Placeholder="Digite os 8 números — ex.: 88000000" ClearButtonVisibility="WhileEditing"/>
+        <Label Text="Nome do logradouro *"/><Entry Text="{Binding Logradouro.Nome}" Placeholder="Ex.: Rua Kaio Fernandes Branco" ClearButtonVisibility="WhileEditing"/>
+        <Label Text="Bairro *"/><Entry Text="{Binding Logradouro.Bairro}" Placeholder="Ex.: Centro" ClearButtonVisibility="WhileEditing"/>
+        <Label Text="Cidade *"/><Entry Text="{Binding Logradouro.Cidade}" Placeholder="Ex.: Florianópolis" ClearButtonVisibility="WhileEditing"/>
+        <Label Text="Estado *"/><Entry Text="{Binding Logradouro.Estado}" Placeholder="Sigla com 2 letras — ex.: SC" MaxLength="2" ClearButtonVisibility="WhileEditing"/>
+        <Label Text="País *"/><Entry Text="{Binding Logradouro.Pais}" Placeholder="Ex.: Brasil" ClearButtonVisibility="WhileEditing"/>
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,18,0,0"><Button Text="Salvar" Command="{Binding SalvarCommand}"/><Button Grid.Column="1" Text="Cancelar" BackgroundColor="#E1E6ED" TextColor="#071B33" Command="{Binding CancelarCommand}"/></Grid>
+    </VerticalStackLayout></ScrollView>
+</ContentPage>
