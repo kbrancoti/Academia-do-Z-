@@ -1,33 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj": {}
+    "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj": {
+    "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj",
         "projectName": "AcademiaDoZe.Domain.Tests",
-        "projectPath": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj",
+        "projectPath": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain.Tests\\AcademiaDoZe.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\Kaio\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Kaio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Kaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj": {
-                "projectPath": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj"
+              "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj": {
+                "projectPath": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj"
               }
             }
           }
@@ -42,10 +50,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
@@ -81,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.111/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -359,26 +368,34 @@
         }
       }
     },
-    "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj": {
+    "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj",
         "projectName": "AcademiaDoZe.Domain",
-        "projectPath": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj",
+        "projectPath": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\AcademiaDoZe.Domain.csproj",
         "packagesPath": "C:\\Users\\Kaio\\.nuget\\packages\\",
-        "outputPath": "C:\\workplace\\academiaZe\\AcademiaDoZe.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Kaio\\source\\repos\\Academia-do-Z-\\AcademiaDoZe.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Kaio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Kaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -393,10 +410,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -414,7 +432,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.111/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

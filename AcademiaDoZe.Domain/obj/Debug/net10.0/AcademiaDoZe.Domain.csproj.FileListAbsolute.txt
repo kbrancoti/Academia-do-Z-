@@ -10,3 +10,15 @@ C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\refint\AcademiaDoZ
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.pdb
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\ref\AcademiaDoZe.Domain.dll
 C:\workplace\academiaZe\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.sourcelink.json
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\bin\Debug\net10.0\AcademiaDoZe.Domain.deps.json
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\bin\Debug\net10.0\AcademiaDoZe.Domain.dll
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\bin\Debug\net10.0\AcademiaDoZe.Domain.pdb
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.AssemblyInfoInputs.cache
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.AssemblyInfo.cs
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.sourcelink.json
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.dll
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\refint\AcademiaDoZe.Domain.dll
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\AcademiaDoZe.Domain.pdb
+C:\Users\Kaio\source\repos\Academia-do-Z-\AcademiaDoZe.Domain\obj\Debug\net10.0\ref\AcademiaDoZe.Domain.dll
