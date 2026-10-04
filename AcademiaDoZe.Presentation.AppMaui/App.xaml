@@ -3,7 +3,8 @@
     <Application.Resources>
         <Color x:Key="Primary">#D4A72C</Color><Color x:Key="Navy">#071B33</Color><Color x:Key="Surface">#F7F8FA</Color>
         <Style TargetType="Button"><Setter Property="BackgroundColor" Value="{StaticResource Primary}"/><Setter Property="TextColor" Value="#071B33"/><Setter Property="CornerRadius" Value="12"/><Setter Property="FontAttributes" Value="Bold"/><Setter Property="Padding" Value="16,12"/></Style>
-        <Style TargetType="Entry"><Setter Property="BackgroundColor" Value="White"/><Setter Property="TextColor" Value="#071B33"/><Setter Property="PlaceholderColor" Value="#667085"/><Setter Property="Margin" Value="0,4"/></Style>
-        <Style TargetType="SearchBar"><Setter Property="BackgroundColor" Value="White"/><Setter Property="TextColor" Value="#071B33"/><Setter Property="PlaceholderColor" Value="#667085"/></Style>
+        <Style TargetType="Entry"><Setter Property="BackgroundColor" Value="{AppThemeBinding Light=White, Dark=#1E293B}"/><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}"/><Setter Property="PlaceholderColor" Value="{AppThemeBinding Light=#667085, Dark=#CBD5E1}"/><Setter Property="Margin" Value="0,4"/></Style>
+        <Style TargetType="SearchBar"><Setter Property="BackgroundColor" Value="{AppThemeBinding Light=White, Dark=#1E293B}"/><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}"/><Setter Property="PlaceholderColor" Value="{AppThemeBinding Light=#667085, Dark=#CBD5E1}"/></Style>
+        <Style TargetType="Picker"><Setter Property="BackgroundColor" Value="{AppThemeBinding Light=White, Dark=#1E293B}"/><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}"/><Setter Property="TitleColor" Value="{AppThemeBinding Light=#667085, Dark=#CBD5E1}"/></Style>
     </Application.Resources>
 </Application>

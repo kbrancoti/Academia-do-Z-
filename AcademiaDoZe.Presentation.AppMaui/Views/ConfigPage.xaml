@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcademiaDoZe.Presentation.AppMaui.Views.ConfigPage"
+             Title="Configurações"
+             BackgroundColor="{AppThemeBinding Light=#F7F8FA, Dark=#101820}">
+    <ContentPage.Resources>
+        <Style TargetType="Label"><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}" /></Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="Configurações" FontSize="28" FontAttributes="Bold" />
+            <Label Text="Personalize a aparência e a conexão de dados da aplicação." TextColor="{AppThemeBinding Light=#45546A, Dark=#CBD5E1}" />
+
+            <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#172554}" Stroke="{AppThemeBinding Light=#D7DEE8, Dark=#475569}" StrokeShape="RoundRectangle 16" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="◐ Tema" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="Escolha como a aplicação será exibida." />
+                    <Picker x:Name="TemaPicker" Title="Selecione o tema">
+                        <Picker.Items><x:String>Claro</x:String><x:String>Escuro</x:String><x:String>Sistema</x:String></Picker.Items>
+                    </Picker>
+                    <Button Text="✓ Salvar tema" Clicked="OnSalvarTemaClicked" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{AppThemeBinding Light=White, Dark=#172554}" Stroke="{AppThemeBinding Light=#D7DEE8, Dark=#475569}" StrokeShape="RoundRectangle 16" Padding="18">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="⚙ Credenciais do banco" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="Tipo de banco de dados" />
+                    <Picker x:Name="BancoPicker" Title="Selecione o banco" SelectedIndexChanged="OnBancoChanged">
+                        <Picker.Items><x:String>SQLite</x:String><x:String>SQL Server</x:String><x:String>MySQL</x:String></Picker.Items>
+                    </Picker>
+
+                    <VerticalStackLayout x:Name="SqliteContainer" Spacing="6">
+                        <Label Text="Arquivo do banco SQLite" />
+                        <Entry x:Name="SqliteCaminhoEntry" Placeholder="Caminho do arquivo .db" />
+                        <Label Text="SQLite é local: não necessita servidor, usuário nem senha." FontSize="13" TextColor="{AppThemeBinding Light=#45546A, Dark=#CBD5E1}" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout x:Name="ServidorContainer" Spacing="8" IsVisible="False">
+                        <Label Text="Servidor" /><Entry x:Name="ServidorEntry" Placeholder="Ex.: localhost ou endereço IP" />
+                        <Label Text="Banco de dados" /><Entry x:Name="BancoEntry" Placeholder="Ex.: db_academia_do_ze" />
+                        <Label Text="Usuário" /><Entry x:Name="UsuarioEntry" Placeholder="Ex.: sa ou root" />
+                        <Label Text="Senha" /><Entry x:Name="SenhaEntry" Placeholder="Digite a senha" IsPassword="True" />
+                        <Label Text="Parâmetros adicionais (opcional)" /><Entry x:Name="ComplementoEntry" Placeholder="Ex.: Connect Timeout=5;" />
+                    </VerticalStackLayout>
+
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,6,0,0">
+                        <Button Text="← Cancelar" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" Clicked="OnCancelarClicked" />
+                        <Button Grid.Column="1" Text="✓ Salvar banco" Clicked="OnSalvarBancoClicked" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

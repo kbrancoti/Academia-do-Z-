@@ -2,5 +2,7 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        x:Class="AcademiaDoZe.Presentation.AppMaui.AppShell"
-       FlyoutBackgroundColor="#071B33"
-       ForegroundColor="White" />
+       BackgroundColor="{AppThemeBinding Light=#071B33, Dark=#020617}"
+       FlyoutBackgroundColor="{AppThemeBinding Light=#071B33, Dark=#020617}"
+       ForegroundColor="White"
+       UnselectedColor="{AppThemeBinding Light=#D7DEE8, Dark=#CBD5E1}" />
