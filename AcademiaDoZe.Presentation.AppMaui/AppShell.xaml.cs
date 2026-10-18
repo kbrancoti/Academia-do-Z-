@@ -9,8 +9,12 @@ public partial class AppShell : Shell
         InitializeComponent();
         Items.Add(CriarItem("⌂  Dashboard", "dashboard", () => services.GetRequiredService<DashboardPage>()));
         Items.Add(CriarItem("⌖  Logradouros", "logradouros", () => services.GetRequiredService<LogradouroListPage>()));
+        Items.Add(CriarItem("♙  Alunos", "alunos", () => services.GetRequiredService<AlunoListPage>()));
+        Items.Add(CriarItem("♟  Colaboradores", "colaboradores", () => services.GetRequiredService<ColaboradorListPage>()));
         Items.Add(CriarItem("⚙  Configurações", "configuracoes", () => services.GetRequiredService<ConfigPage>()));
         Routing.RegisterRoute("logradouro", typeof(LogradouroPage));
+        Routing.RegisterRoute("aluno", typeof(AlunoPage));
+        Routing.RegisterRoute("colaborador", typeof(ColaboradorPage));
     }
     private static FlyoutItem CriarItem(string titulo, string rota, Func<Page> pagina) => new() { Title = titulo, Route = rota, Items = { new ShellContent { ContentTemplate = new DataTemplate(pagina) } } };
 }

@@ -17,7 +17,9 @@ public static class MauiProgram
         builder.Services.AddSingleton(config).AddApplicationServices();
         builder.Services.AddSingleton<AppShell>();
         builder.Services.AddTransient<DashboardViewModel>().AddTransient<LogradouroListViewModel>().AddTransient<LogradouroViewModel>();
+        builder.Services.AddTransient<AlunoListViewModel>().AddTransient<AlunoViewModel>().AddTransient<ColaboradorListViewModel>().AddTransient<ColaboradorViewModel>();
         builder.Services.AddTransient<DashboardPage>().AddTransient<LogradouroListPage>().AddTransient<LogradouroPage>().AddTransient<ConfigPage>();
+        builder.Services.AddTransient<AlunoListPage>().AddTransient<AlunoPage>().AddTransient<ColaboradorListPage>().AddTransient<ColaboradorPage>();
         return builder.Build();
     }
 }

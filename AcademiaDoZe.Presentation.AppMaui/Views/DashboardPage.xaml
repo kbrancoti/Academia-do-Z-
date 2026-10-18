@@ -10,6 +10,11 @@
             <Border Grid.Row="1" Grid.Column="0" BackgroundColor="{AppThemeBinding Light=#173A5E, Dark=#172554}" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Colaboradores" TextColor="White"/><Label Text="{Binding TotalColaboradores}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
             <Border Grid.Row="1" Grid.Column="1" BackgroundColor="{AppThemeBinding Light=#071B33, Dark=#1E3A5F}" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout><Label Text="Matrículas" TextColor="White"/><Label Text="{Binding TotalMatriculas}" FontSize="32" TextColor="#D4A72C" FontAttributes="Bold"/></VerticalStackLayout></Border>
         </Grid>
-        <Button Text="⌖  Gerenciar Logradouros" Command="{Binding AbrirLogradourosCommand}" Margin="0,12,0,0" />
+        <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="14" RowSpacing="12" Margin="0,12,0,0">
+            <Button Text="✚  Novo aluno" Command="{Binding NovoAlunoCommand}" />
+            <Button Grid.Column="1" Text="✚  Novo colaborador" Command="{Binding NovoColaboradorCommand}" />
+            <Button Grid.Row="1" Text="⌖  Logradouros" Command="{Binding AbrirLogradourosCommand}" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" />
+            <Button Grid.Row="1" Grid.Column="1" Text="♟  Colaboradores" Command="{Binding AbrirColaboradoresCommand}" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" />
+        </Grid>
     </VerticalStackLayout></ScrollView>
 </ContentPage>
