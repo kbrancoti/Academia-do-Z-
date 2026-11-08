@@ -18,8 +18,10 @@ public static class MauiProgram
         builder.Services.AddSingleton<AppShell>();
         builder.Services.AddTransient<DashboardViewModel>().AddTransient<LogradouroListViewModel>().AddTransient<LogradouroViewModel>();
         builder.Services.AddTransient<AlunoListViewModel>().AddTransient<AlunoViewModel>().AddTransient<ColaboradorListViewModel>().AddTransient<ColaboradorViewModel>();
+        builder.Services.AddTransient<MatriculaListViewModel>().AddTransient<MatriculaViewModel>();
         builder.Services.AddTransient<DashboardPage>().AddTransient<LogradouroListPage>().AddTransient<LogradouroPage>().AddTransient<ConfigPage>();
         builder.Services.AddTransient<AlunoListPage>().AddTransient<AlunoPage>().AddTransient<ColaboradorListPage>().AddTransient<ColaboradorPage>();
+        builder.Services.AddTransient<MatriculaListPage>().AddTransient<MatriculaPage>();
         return builder.Build();
     }
 }

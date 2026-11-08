@@ -8,7 +8,7 @@
         <Style TargetType="Label"><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}" /></Style>
     </ContentPage.Resources>
     <ScrollView>
-        <VerticalStackLayout Padding="24" Spacing="16">
+        <VerticalStackLayout Padding="{OnIdiom Phone='16,20', Desktop='32,28'}" Spacing="16" MaximumWidthRequest="900" HorizontalOptions="Center">
             <Label Text="Configurações" FontSize="28" FontAttributes="Bold" />
             <Label Text="Personalize a aparência e a conexão de dados da aplicação." TextColor="{AppThemeBinding Light=#45546A, Dark=#CBD5E1}" />
 
@@ -45,9 +45,9 @@
                         <Label Text="Parâmetros adicionais (opcional)" /><Entry x:Name="ComplementoEntry" Placeholder="Ex.: Connect Timeout=5;" />
                     </VerticalStackLayout>
 
-                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,6,0,0">
+                    <Grid ColumnDefinitions="{OnIdiom Phone='*', Desktop='*,*'}" RowDefinitions="{OnIdiom Phone='Auto,Auto', Desktop='Auto'}" ColumnSpacing="12" RowSpacing="10" Margin="0,6,0,0">
                         <Button Text="← Cancelar" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" Clicked="OnCancelarClicked" />
-                        <Button Grid.Column="1" Text="✓ Salvar banco" Clicked="OnSalvarBancoClicked" />
+                        <Button Grid.Column="{OnIdiom Phone=0, Desktop=1}" Grid.Row="{OnIdiom Phone=1, Desktop=0}" Text="✓ Salvar banco" Clicked="OnSalvarBancoClicked" />
                     </Grid>
                 </VerticalStackLayout>
             </Border>

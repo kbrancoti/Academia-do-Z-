@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AcademiaDoZe.Presentation.AppMaui.Views.LogradouroPage" Title="{Binding Title}" BackgroundColor="{AppThemeBinding Light=#F7F8FA, Dark=#101820}">
     <ContentPage.Resources><Style TargetType="Label"><Setter Property="TextColor" Value="{AppThemeBinding Light=#071B33, Dark=White}"/></Style></ContentPage.Resources>
-    <ScrollView><VerticalStackLayout Padding="24" Spacing="8">
+    <ScrollView><VerticalStackLayout Padding="{OnIdiom Phone='16,20', Desktop='32,28'}" Spacing="8" MaximumWidthRequest="900" HorizontalOptions="Center">
         <Label Text="Dados do Logradouro" FontSize="26" FontAttributes="Bold" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" Margin="0,0,0,4"/>
         <Label Text="Preencha os campos marcados com * para salvar." TextColor="{AppThemeBinding Light=#45546A, Dark=#CBD5E1}" Margin="0,0,0,12"/>
         <Label Text="CEP *"/><Entry Text="{Binding Logradouro.Cep}" Keyboard="Numeric" Placeholder="Digite os 8 números — ex.: 88000000" ClearButtonVisibility="WhileEditing"/>
@@ -10,6 +10,6 @@
         <Label Text="Cidade *"/><Entry Text="{Binding Logradouro.Cidade}" Placeholder="Ex.: Florianópolis" ClearButtonVisibility="WhileEditing"/>
         <Label Text="Estado *"/><Entry Text="{Binding Logradouro.Estado}" Placeholder="Sigla com 2 letras — ex.: SC" MaxLength="2" ClearButtonVisibility="WhileEditing"/>
         <Label Text="País *"/><Entry Text="{Binding Logradouro.Pais}" Placeholder="Ex.: Brasil" ClearButtonVisibility="WhileEditing"/>
-        <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,18,0,0"><Button Text="✓ Salvar" Command="{Binding SalvarCommand}"/><Button Grid.Column="1" Text="← Cancelar" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" Command="{Binding CancelarCommand}"/></Grid>
+        <Grid ColumnDefinitions="{OnIdiom Phone='*', Desktop='*,*'}" RowDefinitions="{OnIdiom Phone='Auto,Auto', Desktop='Auto'}" ColumnSpacing="12" RowSpacing="10" Margin="0,18,0,0"><Button Text="✓ Salvar" Command="{Binding SalvarCommand}"/><Button Grid.Column="{OnIdiom Phone=0, Desktop=1}" Grid.Row="{OnIdiom Phone=1, Desktop=0}" Text="← Cancelar" BackgroundColor="{AppThemeBinding Light=#E1E6ED, Dark=#334155}" TextColor="{AppThemeBinding Light=#071B33, Dark=White}" Command="{Binding CancelarCommand}"/></Grid>
     </VerticalStackLayout></ScrollView>
 </ContentPage>

@@ -11,5 +11,7 @@ public partial class DashboardViewModel(ILogradouroService logradouros, IAlunoSe
     [RelayCommand] private Task AbrirAlunosAsync() => Shell.Current.GoToAsync("//alunos");
     [RelayCommand] private Task NovoAlunoAsync() => Shell.Current.GoToAsync("aluno");
     [RelayCommand] private Task NovoColaboradorAsync() => Shell.Current.GoToAsync("colaborador");
+    [RelayCommand] private Task NovaMatriculaAsync() => Shell.Current.GoToAsync("matricula");
+    [RelayCommand] private Task AbrirMatriculasAsync() => Shell.Current.GoToAsync("//matriculas");
     [RelayCommand] private Task AbrirColaboradoresAsync() => Shell.Current.GoToAsync("//colaboradores");
 }
